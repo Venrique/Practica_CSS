@@ -377,7 +377,7 @@ header{
 }
 
 .email{
-    width: 100%;
+    width: 80%;
     font-weight: 300;
     color: #000;
     line-height: 50px;
@@ -398,4 +398,22 @@ header{
 
 .sus-text input[type="button"]{
     justify-self: flex-start;
+}
+
+.container-sus input[type='button']{
+    height: 26%;
+    align-self: flex-end;
+    margin-left: -17em;
+}
+
+.footer{
+    background-color: #222222;
+    height: 21em;
+    width: 100%;
+}
+
+.container-fot{
+    height: 40%;
+    width: auto;
+    margin: 0 4%;
 }
