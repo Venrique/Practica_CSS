@@ -72,6 +72,12 @@ header{
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu ul li:hover {
+    color: #000;
 }
 
 .titulo{
@@ -87,13 +93,13 @@ header{
 .titulo h4{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .titulo h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 7em;
+    font-size: 8em;
     margin: -10px auto;
 }
 
@@ -108,6 +114,11 @@ header{
     padding: 0.5em 2em;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    transition: 0.3s linear;
+}
+
+.cabecera .botones:hover{
+    background-image: -webkit-linear-gradient(0deg,#3224b0 0%,#be5ede 100%);
 }
 
 .mod{
@@ -141,6 +152,7 @@ header{
 .reasons span{
     font-weight: bold;
     color: #000000;
+    transition: 0.3s;
 }
 
 .imagen_parte1{
@@ -173,6 +185,10 @@ header{
     padding-left: 10em;
     margin-right: 7em;
     z-index: 2;
+}
+
+.parallax_text input[type="button"]:hover{
+    background-image: -webkit-linear-gradient(0deg,#3224b0 0%,#be5ede 100%);
 }
 
 .parallax_text h2{
@@ -378,8 +394,9 @@ header{
 
 .email{
     width: 80%;
-    font-weight: 300;
-    color: #000;
+    font-weight: 400;
+    color: #777777;
+    font-family: 'Poppins', sans-serif;
     line-height: 50px;
     padding: 0 180px 0 25px;
     border:none;
@@ -410,10 +427,85 @@ header{
     background-color: #222222;
     height: 21em;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-fot{
     height: 40%;
-    width: auto;
+    width: 100%;
     margin: 0 4%;
 }
+
+.menu-fot ul{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-fot ul{
+    list-style: none;
+}
+
+.menu-fot ul li{
+    padding: 0 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-fot ul li:hover{
+    color: #be5ede;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 2em 0;
+}
+
+.logos i{
+    padding: 0 0.5em;
+}
+
+.container-fot p{
+    text-align: center;
+    color: #ffffff;
+}
+
+.container-fot p i{
+    color: #bc5ede;
+}
+
+.container-fot p span{
+    color: #bc5ede;
+}
+
+.equis{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    transform: rotate(45deg);
+  }
+  
+.equis::before{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    left: calc(50% - (30%/2));
+    background-color: #ffffff;
+  }
+.equis::after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    height: 30%;
+    top: calc(50% - (30%/2));
+    background-color: #ffffff;
+  }
