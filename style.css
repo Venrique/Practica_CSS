@@ -51,6 +51,7 @@ header{
 }
 
 .logo{
+    text-align: center;
     font-family: 'Racing Sans One', cursive;
     color: #ffffff;
     font-size: 2em;
@@ -509,3 +510,35 @@ header{
     top: calc(50% - (30%/2));
     background-color: #ffffff;
   }
+
+  @media only screen and (max-width: 1162px) {
+    .reasons {
+        margin-left: 2em;
+    }
+    .imagen_parte1{
+        margin-right: 2em;
+        width: 20%
+    }
+
+    .img_mountain{
+        width: 100%;
+    }
+
+    .parallax_text{
+        width: 100%;
+    }
+
+    header .container{
+        margin-top: 2em;
+        flex-direction: column;
+    }
+
+    .logo, .menu{
+        width: 100%;
+    }
+
+    .sus-text{
+        width: 100%;
+        text-align: start;
+    }
+}
